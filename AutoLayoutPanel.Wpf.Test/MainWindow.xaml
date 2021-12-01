@@ -1,0 +1,33 @@
+﻿<Window x:Class="AutoLayoutPanel.Wpf.Test.AutoLayoutPanelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoLayoutPanel.Wpf.Test" 
+        xmlns:autolayout="clr-namespace:AutoLayout;assembly=AutoLayoutPanel.Wpf"
+        mc:Ignorable="d"
+        Title="AutoLayoutWindow" Height="450" Width="800">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <autolayout:AutoLayoutPanel  Grid.Row="0" Grid.Column="0" x:Name="First"></autolayout:AutoLayoutPanel>
+        <autolayout:AutoLayoutPanel Grid.Row="0" Grid.Column="1" x:Name="Second"></autolayout:AutoLayoutPanel>
+        <autolayout:AutoLayoutPanel Grid.Row="0" Grid.Column="2" x:Name="Third"></autolayout:AutoLayoutPanel>
+        <autolayout:AutoLayoutPanel Grid.Row="1" Grid.Column="0" x:Name="Fourth"></autolayout:AutoLayoutPanel>
+        <autolayout:AutoLayoutPanel Grid.Row="1" Grid.Column="1" x:Name="Fifth"></autolayout:AutoLayoutPanel>
+        <autolayout:AutoLayoutPanel Grid.Row="1" Grid.Column="2" x:Name="Sixth"></autolayout:AutoLayoutPanel>
+        <autolayout:AutoLayoutPanel Grid.Row="2" Grid.Column="0" x:Name="Seventh"></autolayout:AutoLayoutPanel>
+        <autolayout:AutoLayoutPanel Grid.Row="2" Grid.Column="1" x:Name="Eighth"></autolayout:AutoLayoutPanel>
+        <autolayout:AutoLayoutPanel Grid.Row="2" Grid.Column="2" x:Name="Ninth"></autolayout:AutoLayoutPanel>
+
+    </Grid>
+</Window>
